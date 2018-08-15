@@ -1,0 +1,157 @@
+%-------------------------
+% Resume in Latex
+% Author : Le Huynh Duc
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://lhduc94.wordpress.com/}{\Large Le Huynh Duc}} & Email : \href{mailto:lhduc94@gmail.com}{lhduc94@gmail.com}\\
+  \href{http://lhduc94.wordpress.com/}{http://lhduc94.wordpress.com/} & Mobile : +841684043272 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ho Chi Minh University of Science}{Ho Chi Minh, VietNam}
+      {Bachelor of Science in Computer Science}{Aug. 2012 -- Sep. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FPT Telecom}{Ho Chi Minh, Viet Nam}
+      {Data Scientist}{Aug 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Search Engine}
+          {Using ElasticSearch Framework to build the Search Engine for FPT-Playbox.}
+        \resumeItem{Recommender System}
+          {Using PredictionIO Framework to build a Recommender System for movie.}
+        \resumeItem{Business Intelligent}
+          {Using colleration to compute relationship among channels of FPT-PayTV. Then analyzing the exchange of views among channels.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {EyeQ}{Ho Chi Minh, Viet Nam}
+      {Fresher R{\&}D Engineer}{Apr 2017 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Face Recognize}
+          {Using deep learning to extract feature vector from image tracked by camera. Counting the number of return visitor and new visitor in the store(Coffee House). 
+Deploying dashboard using Nodejs to analyze data}
+     \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Recommender System - My thesis}
+      {From the user's information and items which to be used and evaluated on the forums, synthesize and predict some products that they will love in the future then give them advice. Thesis uses Collaborative Filtering's method to solve this problem.}
+    \resumeSubItem{Recognizing hand-written Digits}
+      {Using artificial neurons's network which learned from MNIST's data set to recorgnize. Build an Android Application using this model.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, R, C++, Scala, SQL, Matlab}
+    }
+  	\item{
+	  \textbf{Technologies}{: Spark, Hive, Elasticsearch}
+  	}
+  \resumeSubHeadingListEnd
+
+%---------INTERESTT---------------------
+\section{Interest}
+  \resumeSubHeadingListStart
+  	\item{
+  	  \textbf{Reading book}
+  	}
+  	\item{
+	  \textbf{Playing Hamonica}
+	  \href{https://soundcloud.com/doublek94/}{https://soundcloud.com/doublek94/}	
+  	}
+	\item{
+	  \textbf{Writing blog}
+	  \href{http://lhduc94.wordpress.com/}{http://lhduc94.wordpress.com/}
+	}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
